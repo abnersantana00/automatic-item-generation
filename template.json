@@ -1,0 +1,43 @@
+{
+	"cod-template": "1101",
+	"nome-template": "if-simples",
+	"stem": "Escreva um programa que {{cenario}}  o programa deve: {{{condicao}}}\r\n\t\tse nenhuma das alternativas for atendida então {{condicao-padrao}}",
+	"stem-var": {
+		"cenario": [
+			"",
+			"Verifique a temperatura da condição ambiente.",
+			"Verifique a faixa etária de uma pessoa.",
+			"Classifique a nota de um aluno com base em uma prova.",
+			"Verifique se um número é par ou ímpar",
+			"Categoria da velocidade de um veículo ",
+			"Verifique o status do peso de uma pessoa com base no IMC",
+			"Verifique a condição da umidade de um ambiente",
+			"Verifique se a bagagem de um passageiro está dentro do limite permitido",
+			"Verifique a faixa salarial de um funcionário. "
+		],
+		"condicao-padrao": [
+			"Valor inválido, tente novamente."
+		]
+	},
+	"layer-1": {
+		"layer-nome": "condicao",
+		"stem": "{{faixa-salarial}}{{temperatura}}{{faixa-etaria}}",
+		"layer-1-var": {
+			"faixa-salarial": [
+				"",
+				"Exibir \"Baixo salário\" se o salário for menor que R$ 2.000.\r\nExibir \"Salário médio\" se o salário estiver\r\n entre R$ 2.000 e R$ 5.000.\r\nExibir \"Alto salário\" se o salário estiver\r\nentre R$ 5.001 e R$ 10.000.\r\nExibir \"Muito alto salário\" se o salário\r\nfor maior que R$ 10.000.",
+				"f2"
+			],
+			"temperatura": [
+				"",
+				"Exibir “muito frio” se a temperatura for\r\nmenor que 0 graus Celsius. \r\nExibir “Frio” se a temperatura estiver entre\r\n0 e 15 graus Celsius.\r\nExibir “Agradável” se a temperatura estiver entre\r\n16 e 25 graus\r\nExibir “Quente” se a temperatura estiver acima de\r\n25 graus Celsius. ",
+				"f3"
+			],
+			"faixa-etaria": [
+				"",
+				"Exibir “Criança” se a idade for menor que 12 anos. \r\nExibir “Adolescente” se a idade for entre 12 e 17 anos\r\nExibir “Adulto” se a idade for entre 18 e 59 anos\r\nExibir “Idoso” se a idade for de 60 anos ou mais. ",
+				"f4"
+			]
+		}
+	}
+}

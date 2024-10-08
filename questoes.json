@@ -1,0 +1,31 @@
+{
+	"cod-template": "1101",
+	"questoes": [
+		{
+			"titulo": "",
+			"cod-questao": "1013",
+			"stem-var": {
+				"cenario-padrao": "0",
+				"cenario": "1"
+			},
+			"layer-1-var": {
+				"faixa-salarial": "0",
+				"temperatura": "0",
+				"faixa-etaria": "0"
+			}
+		},
+		{
+			"titulo": "",
+			"cod-questao": "1012",
+			"stem-var": {
+				"cenario-padrao": "0",
+				"cenario": "1"
+			},
+			"layer-1-var": {
+				"faixa-salarial": "0",
+				"temperatura": "1",
+				"faixa-etaria": "0"
+			}
+		}
+	]
+}
