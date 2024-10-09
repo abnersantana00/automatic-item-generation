@@ -18,7 +18,7 @@
 			"titulo": "",
 			"cod-questao": "1012",
 			"stem-var": {
-				"cenario-padrao": "0",
+				"cenario-padrao": "1",
 				"cenario": "1"
 			},
 			"layer-1-var": {

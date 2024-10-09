@@ -1,7 +1,7 @@
 {
 	"cod-template": "1101",
 	"nome-template": "if-simples",
-	"stem": "Escreva um programa que {{cenario}}  o programa deve: {{{condicao}}}\r\n\t\tse nenhuma das alternativas for atendida então {{condicao-padrao}}",
+	"stem": "Escreva um programa que {{cenario}}  o programa deve: {{{condicao}}}\r\n\t\tse nenhuma das alternativas for atendida então {{cenario-padrao}}",
 	"stem-var": {
 		"cenario": [
 			"",
@@ -15,8 +15,9 @@
 			"Verifique se a bagagem de um passageiro está dentro do limite permitido",
 			"Verifique a faixa salarial de um funcionário. "
 		],
-		"condicao-padrao": [
-			"Valor inválido, tente novamente."
+		"cenario-padrao": [
+			"Valor inválido, tente novamente.",
+			"v2"
 		]
 	},
 	"layer-1": {
