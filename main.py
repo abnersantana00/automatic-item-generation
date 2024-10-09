@@ -18,12 +18,16 @@ if template_data["cod-template"] == questoes_data["cod-template"]:
     for n in range(total_questoes):
         questao = questoes_data["questoes"][n]
 
-        # Montar o layer-1 (condição)
-        layer_1_stem = template_data["layer-1"]["stem"]
-        for layer_var_name, layer_var_value in questao["layer-1-var"].items():
-            index = int(layer_var_value)
-            variable_insert = template_data["layer-1"]["layer-1-var"][layer_var_name][index]
-            layer_1_stem = layer_1_stem.replace(f"{{{{{layer_var_name}}}}}", variable_insert)
+        # Montar o layer-1 (condição) - Se aplicável
+        if "layer-1" in template_data and "layer-1-var" in questao:
+            layer_1_stem = template_data["layer-1"]["stem"]
+            for layer_var_name, layer_var_value in questao["layer-1-var"].items():
+                index = int(layer_var_value)
+                if layer_var_name in template_data["layer-1"]["layer-1-var"]:
+                    variable_insert = template_data["layer-1"]["layer-1-var"][layer_var_name][index]
+                    layer_1_stem = layer_1_stem.replace(f"{{{{{layer_var_name}}}}}", variable_insert)
+        else:
+            layer_1_stem = ""
 
         # Montar o layer-2 (se aplicável)
         if "layer-2" in template_data:
