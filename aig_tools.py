@@ -1,11 +1,10 @@
 import json
 
+
 def generate_questions(template_path, question_path):
-    # Abrindo e carregando o arquivo template.json
     with open(template_path, 'r') as template_file:
         template_data = json.load(template_file)
 
-    # Abrindo e carregando o arquivo questoes.json
     with open(question_path, 'r') as questoes_file:
         questoes_data = json.load(questoes_file)
 
@@ -57,10 +56,9 @@ def generate_questions(template_path, question_path):
             stem_principal = stem_principal.replace("{{{layer-2}}}", layer_2_stem)
             stem_principal = stem_principal.replace("{{{layer-3}}}", layer_3_stem)
 
-            # Exibir a questão gerada
-            #print(f"### Questão {n+1} ###")
+            print(f"### Questão {n+1} ###")
             print(stem_principal)
             print()
 
     else:
-        print("Erro: O template e a lista de geração têm códigos diferentes")
+        print("Erro: O template e a lista de geração têm dingos diferentes")
