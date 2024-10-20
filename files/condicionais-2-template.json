@@ -1,0 +1,61 @@
+{
+  "cod-template": "1102",
+  "nome-template": "if-composto",
+  "stem": "{{contexto}}{{{if-aninhado}}}",
+  "stem-var": {
+    "contexto": [
+      "",
+      "Se nenhuma das alternativas for atendida então exiba a mensagem : \"Valor inválido, tente novamente\".",
+      "Caso nenhuma das condições anteriores seja satisfeita, mostre a mensagem: 'Valor inválido, tente novamente'.",
+      "Se todas as verificações falharem, exiba a mensagem: 'Valor inválido, tente novamente'.",
+      "Se nenhuma das opções se aplicar, retorne a mensagem: 'Valor inválido, tente novamente'."
+    ],
+    "entrada-exemplo": [
+      "",
+      "Valor real com ponto flutuante com duas casas decimais"
+    ],
+    "saida-exemplo": [
+      "",
+      "Palavras contendo apenas letras de (A a Z) maiúsculas e minúsculas "
+    ]
+  },
+  "layer-1": {
+    "layer-nome": "if-aninhado",
+    "stem": "{{avaliacao-credito}}{{desconto}}{{frete}}{{imposto}}{{imposto-renda}}{{multa}}{{plano-academia}}{{promocao}}{{seguro}}{{tarifa}}",
+    "layer-1-var": {
+      "avaliacao-credito": [
+        ""
+     ],
+      "desconto": [
+        ""
+     ],
+      "frete": [
+        ""
+     ],
+
+      "imposto": [
+        ""
+     ],
+
+      "imposto-de-renda": [
+        ""
+     ],
+
+      "multa": [
+        ""
+     ],
+      "plano-academia": [
+        ""
+     ],
+       "promocao": [
+        ""
+     ],
+        "seguro": [
+        ""
+     ],
+        "tarifa": [
+        ""
+     ]
+    }
+  }
+}
