@@ -1,6 +1,7 @@
 from aig_tools import generate_questions
 
 # gerar questões 50 questões (if simples)
-#generate_questions('files/condicionais-1-template.json', 'files/condicionais-1-questoes.json')
+generate_questions('files/if-simples-template.json', 'files/if-simples-questoes.json', qtd_itens=10)
+
 # gerar questões 50 questões (if composto)
-generate_questions('files/condicionais-2-template.json', 'files/condicionais-2-questoes.json')
+generate_questions('files/if-composto-template.json', 'files/if-composto-questoes.json', qtd_itens=10)

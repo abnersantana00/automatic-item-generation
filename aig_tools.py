@@ -1,7 +1,7 @@
 import json
 
 
-def generate_questions(template_path, question_path):
+def generate_questions(template_path, question_path, qtd_itens=None):
     with open(template_path, 'r') as template_file:
         template_data = json.load(template_file)
 
@@ -11,9 +11,14 @@ def generate_questions(template_path, question_path):
     # Comparar o cod-template dos dois arquivos
     if template_data["cod-template"] == questoes_data["cod-template"]:
         total_questoes = len(questoes_data["questoes"])
+
+        # Ajustar qtd_itens para não exceder o total de questões disponíveis
+        if qtd_itens is None or qtd_itens > total_questoes:
+            qtd_itens = total_questoes
+
         stem_variables = template_data["stem-var"]
 
-        for n in range(total_questoes):
+        for n in range(qtd_itens):
             questao = questoes_data["questoes"][n]
 
             # Montar o layer-1 (condição) - Se aplicável
@@ -56,9 +61,9 @@ def generate_questions(template_path, question_path):
             stem_principal = stem_principal.replace("{{{layer-2}}}", layer_2_stem)
             stem_principal = stem_principal.replace("{{{layer-3}}}", layer_3_stem)
 
-            print(f"### Questão {n+1} ###")
+            print(f"### Questão {n + 1} ###")
             print(stem_principal)
             print()
 
     else:
-        print("Erro: O template e a lista de geração têm dingos diferentes")
+        print("Erro: O template e a lista de geração têm códigos diferentes")
