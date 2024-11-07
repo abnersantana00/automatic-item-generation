@@ -6,7 +6,8 @@
 
     "contexto": [
       "",
-      "Um sistema bancário precisa avaliar o credito de clientes baseado em seu histórico financeiro"
+      "Um sistema bancário precisa avaliar o credito de clientes baseado em seu histórico financeiro",
+      "contexto2"
     ],
     "entrada-exemplo": [
       "",
