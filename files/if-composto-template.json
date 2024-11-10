@@ -1,7 +1,7 @@
 {
   "cod-template": "1102",
   "nome-template": "if-composto",
-  "stem": "{{contexto}}{{{if-aninhado}}}",
+  "stem": "{{contexto}} {{{if-aninhado}}}",
   "stem-var": {
     "contexto": [
       "",
